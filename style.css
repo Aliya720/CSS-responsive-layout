@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: "Merriweather", serif;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+pre {
+    font-family: "Merriweather", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+#logo {
+    display: inline-block;
+}
+
+ul.nav-toggle {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-items {
+    display: inline-block;
+    margin: 30px;
+    line-height: 30px;
+    background-color: #042582;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.nav-items.active,
+.nav-items:hover {
+    background-color: #011754;
+    color: #c8c7c7;
+}
+
+.search {
+   float: right;
+   margin-top: 20px;
+}
+
+.search input {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.srchbtn{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin:10px;
+    cursor: pointer;
+}
+
+.toggle{
+    float: right;
+    margin: 30px;
+    color: #011754;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 850px) {
+    #logo{
+        margin-right:50px;
+    }
+    .toggle{
+        display: inline-block;
+    }
+    .nav-items{
+        display: block;
+        background-color: none;
+        justify-content: center;
+        color: black;
+    }
+    .nav-toggle{
+        display: block;
+        position: relative;
+        background-color: #042582;
+    }
+}
+
+@media (max-width: 750px) {
+    #logo{
+        margin-right:50px;
+    }
+    .toggle{
+        display: inline-block;
+    }
+    .nav-items{
+        display: block;
+        background-color: none;
+        justify-content: center;
+        color: black;
+    }
+    .nav-toggle{
+        display: block;
+        position: relative;
+        background-color: #042582;
+    }
+    .search{
+        display: block;
+    }
+}
+
+
+/* for dropdown */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    line-height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
