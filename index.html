@@ -8,41 +8,65 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="style.css" />
+
     <title>Internship basic project</title>
   </head>
   <body>
-    <header class="main-nav">
+    <header>
       <nav class="navbar">
-        <label for="menu">
-            <span class="material-symbols-outlined">menu</span>
-        </label>
-
-        <a href="#" id="logo" class="active"
-          ><img
-            src="/CSS responsive layout/images/antstack_logo.png"
-            alt="antstack_logo"
-            height="100px"
-        /></a>
-        <form method="get" class="search">
-          <input type="text" name="search" placeholder="Search" />
-          <button type="submit" class="srchbtn">
-            <span class="material-symbols-outlined"> search </span>
-          </button>
-        </form>
         <ul class="nav-toggle">
-          <li class="nav-items"><a href="#" class="active">All</a></li>
-          <li class="nav-items"><a href="#">News</a></li>
-          <li class="nav-items"><a href="#">Exclusive</a></li>
-          <li class="nav-items"><a href="#">Recommended</a></li>
+          <li class="nav-menu">
+            <i class="material-symbols-outlined"> menu </i>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="active">
+              <i class="material-symbols-outlined" id="faded">
+                deployed_code
+              </i>
+              Cryptonews
+            </a>
+          </li>
+          <li class="nav-items">
+            <a href="#"
+              >All <i class="material-symbols-outlined" id="faded"> add </i></a
+            >
+          </li>
+          <li class="nav-items">
+            <a href="#">
+              News <i class="material-symbols-outlined" id="faded"> add </i></a
+            >
+          </li>
+          <li class="nav-items">
+            <a href="#">
+              Exclusive
+              <i class="material-symbols-outlined" id="faded"> add </i></a
+            >
+          </li>
+          <li class="nav-items">
+            <a href="#">
+              Guide <i class="material-symbols-outlined" id="faded"> add </i></a
+            >
+          </li>
+          <li class="nav-items">
+            <a href="#">
+              Recommended
+              <i class="material-symbols-outlined" id="faded"> add </i></a
+            >
+          </li>
+          <ul class="dropdown lang">
+            <button class="drop-btn">
+              En<i class="material-symbols-outlined" id="faded"> expand_more </i>
+            </button>
+            <li class="dropdown-content">Hindi</li>
+          </ul>
         </ul>
       </nav>
     </header>
-    <main>
+    <!-- <main>
       <section>
         <h1>Latest news</h1>
       </section>
     </main>
-    <footer></footer>
-
+    <footer></footer> -->
   </body>
 </html>
