@@ -54,14 +54,10 @@
               <i class="material-symbols-outlined" id="faded"> add </i></a
             >
           </li>
-          <ul class="dropdown lang">
-            <button class="drop-btn">
-              En<i class="material-symbols-outlined" id="faded">
-                expand_more
-              </i>
-            </button>
-            <li class="dropdown-content">Hindi</li>
-          </ul>
+          <select class="lang">
+            <option value="English">En</option>
+            <option value="Hindi">Hi</option>
+          </select>
         </ul>
       </nav>
     </header>
@@ -77,41 +73,16 @@
           <i class="material-symbols-outlined">chevron_right</i>
         </span>
         <!-- carousel start -->
-        <div class="carousel">
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-          <!-- 1 element  -->
-          <div class="carousel_element">
-            <img src="/images/Trading.jpg" width="100%" />
-            <figcaption>
-              <dl class="blockchain_news">Blockchain News</dl>
-              <i class="full_faded">&#x2022;</i>
-              <time class="time">4 hours ago</time>
-              <dd>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-                totam cum, omnis culpa tenetur sunt maxime ea praesentium magni
-                laborum, ipsa nihil? Culpa neque quae impedit, repellendus ex
-                consequatur ipsam?
-              </dd>
-            </figcaption>
-          </div>
-          <!-- 2 element  -->
-          <div class="carousel_element">
-            <img src="/images/Trading.jpg" width="100%" />
-            <figcaption>
-              <dl class="blockchain_news">Blockchain News</dl>
-              <i class="full_faded">&#x2022;</i>
-              <time class="time">4 hours ago</time>
-              <dd>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-                totam cum, omnis culpa tenetur sunt maxime ea praesentium magni
-                laborum, ipsa nihil? Culpa neque quae impedit, repellendus ex
-                consequatur ipsam?
-              </dd>
-            </figcaption>
+        <!-- 1 element  -->
+        <div class="carousel_element">
+          <div class="elemnt">
+            <dl class="blockchain_news">Blockchain News</dl>
+            <i class="full_faded">&#x2022;</i>
+            <time class="time">4 hours ago</time>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+              totam cum, omnis culpa tenetur
+            </p>
           </div>
         </div>
         <!-- card start  -->
@@ -157,20 +128,6 @@
           </dd>
         </div>
         <hr />
-        <!-- 4 card  -->
-        <div class="card">
-          <aside>
-            <img src="/images/crypto.jpeg" width="100%" class="card_image" />
-          </aside>
-          <dl class="blockchain_news">Blockchain News</dl>
-          <i class="full_faded">&#x2022;</i>
-          <time class="time">4 hours ago</time>
-          <dd class="card_txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed
-          </dd>
-        </div>
-        <hr />
       </aside>
       <!-- main content  -->
       <div style="height: 60px; margin-top: 80px; display: inline-block">
@@ -192,6 +149,50 @@
       <button class="read_more">
         Read article <i class="material-symbols-outlined"> arrow_right_alt </i>
       </button>
+
+      <!-- slider -->
+      <div class="slider">
+        <div class="slides active">
+          <div class="indicator">
+            <button class="active"></button>
+            <button></button>
+          </div>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet totam
+            cum, omnis culpa tenetur
+          </p>
+        </div>
+
+        <div class="slides">
+          <div class="indicator">
+            <button class="active"></button>
+            <button></button>
+          </div>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet totam
+            cum, omnis culpa tenetur
+          </p>
+        </div>
+        <div class="slides">
+          <div class="indicator">
+            <button class="active"></button>
+            <button></button>
+          </div>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet totam
+            cum, omnis culpa tenetur
+          </p>
+        </div>
+      </div>
     </main>
   </body>
 </html>

@@ -1,7 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
  * {
-     padding: 0%;
+     padding: 0;
      margin: 0;
      font-family: "Roboto Condensed", sans-serif;
      box-sizing: border-box;
@@ -74,11 +74,9 @@
 
  /* dropdown to select lang */
 
- .dropdown .lang {
-     display: inline;
- }
 
- .drop-btn {
+ .lang {
+     display: inline;
      background: none;
      border: none;
      outline: none;
@@ -86,23 +84,7 @@
      margin-left: 10rem;
      cursor: pointer;
      padding: 10px;
-     font-weight: 600;
- }
-
- .dropdown-content {
-     display: none;
-     text-align: center;
-     position: absolute;
-     cursor: pointer;
-     background-color: #e9edf2;
-     min-width: 100px;
-     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-     z-index: 1;
- }
-
- .dropdown:hover .dropdown-content {
-     display: inline-block;
-     background-color: #e9edf2;
+     font-weight: 500;
  }
 
  /* navbar for mobile view  */
@@ -156,35 +138,11 @@
      cursor: pointer;
  }
 
- .carousel {
-     margin: 13px;
-     /* position: relative; */
- }
-
  /* for carousel */
 
- .carousel_element>img {
-     border-radius: 20px;
-     width: 100%;
-     height: 200px;
- }
-
- .carousel_element>figcaption>dt {
-     /* position: absolute; */
- }
-
- .carousel_element>figcaption>dd {
-     /* position: absolute; */
- }
-
- /* main content  */
-
- article {
-     text-transform: uppercase;
-     font-weight: 600;
-     padding: 8px;
-     display: inline;
-     background-image: linear-gradient(to right, rgb(213, 180, 255), rgba(213, 180, 255, 0.2), rgba(255, 255, 255, 0.1));
+ .carousel {
+     margin: 13px;
+     display: flex;
  }
 
  .blockchain_news {
@@ -208,9 +166,55 @@
      display: inline;
  }
 
+ /* .carousel_img {
+     position: relative;
+    } */
+
+ .carousel_element {
+     background-image: linear-gradient(to top, rgba(91, 53, 245, 0.6) 15%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0)), url("/images/Trading.jpg");
+     background-size: cover;
+     align-items: center;
+     border-radius: 20px;
+     width: 100%;
+     height: 200px;
+     position: relative;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     color: #fff;
+ }
+
+ .elemnt {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     margin: 20px;
+     color: white;
+ }
+
+ .elemnt dl {
+     color: #fff;
+     /* margin-bottom: 50px; */
+ }
+
+ .elemnt time {
+     color: rgb(255, 255, 255, 0.7);
+     /* margin-bottom: 50px; */
+ }
+
+ /* main content  */
+
+ article {
+     text-transform: uppercase;
+     font-weight: 600;
+     padding: 8px;
+     display: inline;
+     background-image: linear-gradient(to right, rgb(213, 180, 255), rgba(213, 180, 255, 0.2), rgba(255, 255, 255, 0.1));
+ }
+
+
  .hashtag {
      margin-right: 4rem;
-     color: #545454;
+     color: #a1a1a1;
      display: inline;
  }
 
@@ -253,4 +257,37 @@
      height: 1px;
      border: none;
      background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, rgb(199, 199, 199)));
+ }
+
+ /* for slider  */
+
+ .slider {
+     margin-top: 80px;
+ }
+
+ .slides {
+     display: inline-block;
+     width: 18%;
+     margin-right: 50px;
+     opacity: 0.6;
+ }
+
+ .slides p {
+     margin-top: 16px;
+     font-weight: 600;
+ }
+
+ .slides.active {
+     opacity: 1;
+ }
+
+ .indicator button {
+     margin-bottom: 7px;
+     padding-left: 10px;
+     border-radius: 3px;
+     border: #cacaca solid;
+ }
+
+ .indicator button.active {
+     border: #5a5a5a solid;
  }
