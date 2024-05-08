@@ -12,6 +12,7 @@
     <title>Internship basic project</title>
   </head>
   <body>
+    <!-- header and navbar -->
     <header>
       <nav class="navbar">
         <ul class="nav-toggle">
@@ -65,17 +66,30 @@
       </nav>
     </header>
     <main>
+      <!-- side content , carousel and cards -->
       <aside>
         <form action="search" class="search">
           <input type="text" placeholder="Article name, tag, category..." />
         </form>
         <h2 class="recommended">Recommended</h2>
-        <p>View all <i class="material-symbols-outlined"> chevron_right </i></p>
+        <span class="view">
+          View all
+          <i class="material-symbols-outlined">chevron_right</i>
+        </span>
+        <!-- carousel start -->
         <div class="carousel">
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <!-- 1 element  -->
           <div class="carousel_element">
             <img src="/images/Trading.jpg" width="100%" />
             <figcaption>
-              <dt>Blockchain News</dt>
+              <dl class="blockchain_news">Blockchain News</dl>
+              <i class="full_faded">&#x2022;</i>
+              <time class="time">4 hours ago</time>
               <dd>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
                 totam cum, omnis culpa tenetur sunt maxime ea praesentium magni
@@ -84,10 +98,13 @@
               </dd>
             </figcaption>
           </div>
+          <!-- 2 element  -->
           <div class="carousel_element">
             <img src="/images/Trading.jpg" width="100%" />
             <figcaption>
-              <dt>Blockchain News</dt>
+              <dl class="blockchain_news">Blockchain News</dl>
+              <i class="full_faded">&#x2022;</i>
+              <time class="time">4 hours ago</time>
               <dd>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
                 totam cum, omnis culpa tenetur sunt maxime ea praesentium magni
@@ -97,79 +114,84 @@
             </figcaption>
           </div>
         </div>
+        <!-- card start  -->
+        <!-- 1 card  -->
         <div class="card">
-          <aside><img src="/images/Trading.jpg" width="100%" /></aside>
-          <dl>Blockchain News</dl>
-          <time>4 hours ago</time>
-          <dd>
+          <aside>
+            <img src="/images/crypto.jpeg" width="100%" class="card_image" />
+          </aside>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <dd class="card_txt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed, accusamus perferendis, a beatae, itaque esse
-            modi distinctio sunt maiores odio sint similique earum sit
-            recusandae illo?
+            nihil delectus eos sed
           </dd>
         </div>
         <hr />
+        <!-- 2 card  -->
         <div class="card">
-          <aside><img src="/images/Trading.jpg" width="100%" /></aside>
-          <dl>Blockchain News</dl>
-          <time>4 hours ago</time>
-          <dd>
+          <aside>
+            <img src="/images/crypto.jpeg" width="100%" class="card_image" />
+          </aside>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <dd class="card_txt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed, accusamus perferendis, a beatae, itaque esse
-            modi distinctio sunt maiores odio sint similique earum sit
-            recusandae illo?
+            nihil delectus eos sed
           </dd>
         </div>
         <hr />
+        <!-- 3 card  -->
         <div class="card">
-          <aside><img src="/images/Trading.jpg" width="100%" /></aside>
-          <dl>Blockchain News</dl>
-          <time>4 hours ago</time>
-          <dd>
+          <aside>
+            <img src="/images/crypto.jpeg" width="100%" class="card_image" />
+          </aside>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <dd class="card_txt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed, accusamus perferendis, a beatae, itaque esse
-            modi distinctio sunt maiores odio sint similique earum sit
-            recusandae illo?
+            nihil delectus eos sed
           </dd>
         </div>
         <hr />
+        <!-- 4 card  -->
         <div class="card">
-          <aside><img src="/images/Trading.jpg" width="100%" /></aside>
-          <dl>Blockchain News</dl>
-          <time>4 hours ago</time>
-          <dd>
+          <aside>
+            <img src="/images/crypto.jpeg" width="100%" class="card_image" />
+          </aside>
+          <dl class="blockchain_news">Blockchain News</dl>
+          <i class="full_faded">&#x2022;</i>
+          <time class="time">4 hours ago</time>
+          <dd class="card_txt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed, accusamus perferendis, a beatae, itaque esse
-            modi distinctio sunt maiores odio sint similique earum sit
-            recusandae illo?
-          </dd>
-        </div>
-        <hr />
-        <div class="card">
-          <aside><img src="/images/Trading.jpg" width="100%" /></aside>
-          <dl>Blockchain News</dl>
-          <time>4 hours ago</time>
-          <dd>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed, accusamus perferendis, a beatae, itaque esse
-            modi distinctio sunt maiores odio sint similique earum sit
-            recusandae illo?
-          </dd>
-        </div>
-        <hr />
-        <div class="card">
-          <aside><img src="/images/Trading.jpg" width="100%" /></aside>
-          <dl>Blockchain News</dl>
-          <time>4 hours ago</time>
-          <dd>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            nihil delectus eos sed, accusamus perferendis, a beatae, itaque esse
-            modi distinctio sunt maiores odio sint similique earum sit
-            recusandae illo?
+            nihil delectus eos sed
           </dd>
         </div>
         <hr />
       </aside>
+      <!-- main content  -->
+      <div style="height: 60px; margin-top: 80px; display: inline-block">
+        <article>Best of the work</article>
+      </div>
+      <br />
+      <dl class="blockchain_news">Blockchain News</dl>
+      <i class="full_faded">&#x2022;</i>
+      <time class="time">4 hours ago</time>
+      <dd>
+        <h1 class="best_of_work">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          nihil delectus eos sed, accusamus
+        </h1>
+      </dd>
+      <!-- hashtags  -->
+      <h4 class="hashtag">#Ethereum</h4>
+      <h4 class="hashtag">#Analytics</h4>
+      <button class="read_more">
+        Read article <i class="material-symbols-outlined"> arrow_right_alt </i>
+      </button>
     </main>
   </body>
 </html>

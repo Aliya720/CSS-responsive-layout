@@ -11,9 +11,9 @@
  body {
      background-color: #e4ecf3;
      padding: 40px;
-     /* background-image: url("/images/background.jpeg");
-    background-repeat: no-repeat;
-    background-position: center; */
+     background-image: url("/images/background.jpeg");
+     background-repeat: no-repeat;
+     background-position: center;
 
  }
 
@@ -26,6 +26,7 @@
      list-style: none;
  }
 
+ /* navigation bar */
  .navbar {
      display: flex;
  }
@@ -57,7 +58,7 @@
  #faded {
      color: #545454;
      font-weight: 400;
-     font-size: 20px;
+     font-size: 17px;
  }
 
  a.active,
@@ -71,9 +72,10 @@
      }
  }
 
+ /* dropdown to select lang */
 
  .dropdown .lang {
-     display: flex;
+     display: inline;
  }
 
  .drop-btn {
@@ -99,11 +101,11 @@
  }
 
  .dropdown:hover .dropdown-content {
-     display: block;
+     display: inline-block;
      background-color: #e9edf2;
  }
 
-
+ /* navbar for mobile view  */
 
  @media (max-width : 800px) {
      .nav-toggle {
@@ -125,6 +127,8 @@
      }
  }
 
+ /* side content  */
+
  aside {
      float: right;
      background-color: #f5f5f5;
@@ -140,4 +144,113 @@
      background-color: #e4e4e6;
      border: none;
      margin-bottom: 1.5rem;
+ }
+
+ .recommended {
+     display: inline;
+     padding-right: 8rem;
+ }
+
+ .view:hover {
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+ .carousel {
+     margin: 13px;
+     /* position: relative; */
+ }
+
+ /* for carousel */
+
+ .carousel_element>img {
+     border-radius: 20px;
+     width: 100%;
+     height: 200px;
+ }
+
+ .carousel_element>figcaption>dt {
+     /* position: absolute; */
+ }
+
+ .carousel_element>figcaption>dd {
+     /* position: absolute; */
+ }
+
+ /* main content  */
+
+ article {
+     text-transform: uppercase;
+     font-weight: 600;
+     padding: 8px;
+     display: inline;
+     background-image: linear-gradient(to right, rgb(213, 180, 255), rgba(213, 180, 255, 0.2), rgba(255, 255, 255, 0.1));
+ }
+
+ .blockchain_news {
+     margin: 5px 10px 5px 0px;
+     display: inline;
+     color: rgb(0, 115, 182);
+     font-weight: 550;
+     font-size: 0.9rem;
+ }
+
+ .time {
+     font-size: 0.8rem;
+     color: #848484;
+ }
+
+ .full_faded {
+     color: #dadada;
+     font-weight: 400;
+     font-size: 20px;
+     margin: 3px;
+     display: inline;
+ }
+
+ .hashtag {
+     margin-right: 4rem;
+     color: #545454;
+     display: inline;
+ }
+
+ .best_of_work {
+     font-size: 3rem;
+     margin-top: 2rem;
+     width: 50%;
+ }
+
+ .read_more {
+     display: block;
+     margin-top: 3rem;
+     border-radius: 50px;
+     line-height: 2rem;
+     padding: 3px 8px;
+     border: none;
+     background-color: #fff;
+     font-weight: 600;
+
+ }
+
+ /* aside cards */
+ .card {
+     display: inline-block;
+     margin: 20px;
+ }
+
+ .card_image {
+     border-radius: 10px;
+ }
+
+ .card_txt {
+     font-size: 17px;
+     margin-top: 15px;
+     font-weight: 600;
+ }
+
+
+ hr {
+     height: 1px;
+     border: none;
+     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, rgb(199, 199, 199)));
  }
