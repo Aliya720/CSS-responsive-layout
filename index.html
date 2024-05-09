@@ -15,10 +15,11 @@
     <!-- header and navbar -->
     <header>
       <nav class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="nav-menu">
+          <i class="material-symbols-outlined"> menu </i>
+        </label>
         <ul class="nav-toggle">
-          <li class="nav-menu">
-            <i class="material-symbols-outlined"> menu </i>
-          </li>
           <li class="nav-items">
             <a href="#" class="active">
               <i class="material-symbols-outlined" id="faded">
@@ -63,7 +64,7 @@
     </header>
     <main>
       <!-- side content , carousel and cards -->
-      <aside>
+      <aside class="side_content">
         <form action="search" class="search">
           <input type="text" placeholder="Article name, tag, category..." />
         </form>
