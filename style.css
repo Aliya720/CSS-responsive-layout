@@ -27,6 +27,10 @@
  }
 
  /* navigation bar */
+ header {
+     display: inline-block;
+ }
+
  .navbar {
      display: flex;
  }
@@ -184,6 +188,10 @@
      /* margin-bottom: 50px; */
  }
 
+ .elemnt .indicator {
+     margin-bottom: 70px;
+ }
+
  /* main content  */
 
  article {
@@ -313,6 +321,7 @@
          text-align: center;
          background-color: #e4ecf3;
          top: 80px;
+         /* height: 100vh; */
          left: -100%;
      }
 
