@@ -90,7 +90,7 @@
      border: none;
      outline: none;
      box-shadow: none;
-     margin-left: 10rem;
+     margin-left: 150px;
      cursor: pointer;
      padding: 10px;
      font-weight: 500;
@@ -104,6 +104,16 @@
      padding: 13px;
      width: 30%;
      border-radius: 30px;
+ }
+
+ .search {
+     position: relative;
+ }
+
+ .search>i {
+     position: absolute;
+     right: 0;
+     padding: 10px;
  }
 
  .search>input {
@@ -153,9 +163,6 @@
      display: inline;
  }
 
- /* .carousel_img {
-     position: relative;
-    } */
 
  .carousel_element {
      background-image: linear-gradient(to top, rgba(91, 53, 245, 0.6) 15%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0)), url("/images/Trading.jpg");
@@ -189,7 +196,12 @@
  }
 
  .elemnt .indicator {
-     margin-bottom: 70px;
+     margin-bottom: 80px;
+     border-color: #e4ecf3;
+ }
+
+ .elemnt .indicator .active {
+     border-color: #fff;
  }
 
  /* main content  */
@@ -270,6 +282,10 @@
 
  .slides.active {
      opacity: 1;
+ }
+
+ .indicator {
+     display: flex;
  }
 
  .indicator button {
